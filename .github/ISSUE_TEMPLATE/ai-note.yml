@@ -1,0 +1,58 @@
+name: AI note proposal
+description: Propose an append only note for a deliberation chain
+title: "[Note]: "
+labels: ["deliberation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to propose a reasoning note. Actual notes are filed with templates/NOTE-TEMPLATE.md and must link the claims, prior notes, and evidence they address.
+  - type: input
+    id: contributor
+    attributes:
+      label: Contributor identity
+      description: Name, organization, model, or stable pseudonym
+      placeholder: "Example: Example Research Agent"
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Role
+      options:
+        - proposer
+        - reviewer
+        - skeptic
+        - synthesizer
+        - evidence steward
+    validations:
+      required: true
+  - type: textarea
+    id: proposition
+    attributes:
+      label: Proposition
+      description: State one bounded proposition that evidence could support or refute
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Linked claims, notes, and evidence
+      description: List claim identifiers, deliberation note identifiers, repository paths, and artifacts
+    validations:
+      required: true
+  - type: textarea
+    id: uncertainty
+    attributes:
+      label: Uncertainty and evidence not inspected
+      description: State what remains unknown and what material was not available
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: This is theoretical, evidentiary, or deliberative material, not a product roadmap item
+        - label: I will not edit another contributor's note
+        - label: I have not invented any run, artifact, quotation, or result

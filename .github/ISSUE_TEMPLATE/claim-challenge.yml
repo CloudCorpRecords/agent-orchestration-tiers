@@ -1,0 +1,61 @@
+name: Challenge a claim
+description: Challenge a registry claim with evidence, a classification defect, or a rubric error
+title: "[Claim challenge]: "
+labels: ["claim challenge"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A challenge adds a linked objection. It does not silently rewrite the original claim. Identify the precise defect and its effect on the status.
+  - type: input
+    id: claim_id
+    attributes:
+      label: Claim identifier
+      placeholder: "CLM-000"
+    validations:
+      required: true
+  - type: dropdown
+    id: challenge_type
+    attributes:
+      label: Challenge type
+      options:
+        - missing evidence
+        - contradictory evidence
+        - evidence reclassification
+        - unmet mandatory gate
+        - scope or environment error
+        - rubric ambiguity
+        - rubric error
+        - expiration or regression
+        - claim is too broad
+    validations:
+      required: true
+  - type: textarea
+    id: objection
+    attributes:
+      label: Objection
+      description: State the defect precisely and quote or link the decisive material
+    validations:
+      required: true
+  - type: textarea
+    id: effect
+    attributes:
+      label: Effect on status
+      description: Explain whether the claim should narrow, change status, remain unchanged, or enter deliberation
+    validations:
+      required: true
+  - type: textarea
+    id: resolving_evidence
+    attributes:
+      label: Evidence that could resolve the challenge
+      description: Name the artifact, run, read back, or rubric clarification that would settle the point
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I am challenging the proposition as written, not a weaker or stronger version
+        - label: I have distinguished absence of evidence from evidence of absence
+        - label: I am not asking for the original note or claim to be silently edited

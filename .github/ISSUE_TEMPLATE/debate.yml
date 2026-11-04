@@ -1,0 +1,59 @@
+name: Open a debate
+description: Frame a live interpretive or theoretical disagreement for a deliberation chain
+title: "[Debate]: "
+labels: ["debate"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open a debate when the same evidence supports materially different verdicts or a rubric term is ambiguous. State each position fairly.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: State one question only
+    validations:
+      required: true
+  - type: textarea
+    id: position_a
+    attributes:
+      label: Proposition A
+      description: State the first position in terms its supporter would recognize
+    validations:
+      required: true
+  - type: textarea
+    id: position_b
+    attributes:
+      label: Proposition B
+      description: State the competing position in terms its supporter would recognize
+    validations:
+      required: true
+  - type: textarea
+    id: agreed_facts
+    attributes:
+      label: Agreed facts and evidence
+      description: Link artifacts and identify their evidence classes
+    validations:
+      required: true
+  - type: textarea
+    id: disputed_classification
+    attributes:
+      label: Disputed classification
+      description: Identify whether the disagreement concerns evidence, scope, a mandatory gate, a threshold, or a definition
+    validations:
+      required: true
+  - type: textarea
+    id: decisive_evidence
+    attributes:
+      label: Decisive evidence
+      description: Describe what run, artifact, read back, or rubric clarification could materially resolve the debate
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: Both positions are stated fairly
+        - label: This debate is not being opened merely to repeat a review
+        - label: No product roadmap or implementation commitment is included

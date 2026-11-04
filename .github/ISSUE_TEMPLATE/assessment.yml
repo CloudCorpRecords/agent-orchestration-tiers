@@ -1,0 +1,53 @@
+name: Propose an assessment
+description: Propose a dated, evidence bounded assessment of one system configuration
+title: "[Assessment]: "
+labels: ["assessment"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Assessments apply the ladder to a specified configuration, environment, and interval. They are historical judgments, not permanent rankings or product plans.
+  - type: input
+    id: system
+    attributes:
+      label: System and configuration
+      description: Include a version or build identifier, or state that it is unknown
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and interval
+      description: Describe tools, device classes, authority, oversight, and dates in evidence bounded terms
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence packet
+      description: Link run records, logs, destination read backs, state artifacts, and failed or unknown outcomes
+    validations:
+      required: true
+  - type: textarea
+    id: tiers
+    attributes:
+      label: Tiers to assess
+      description: List tiers and any mandatory gates already known to be untested
+    validations:
+      required: true
+  - type: textarea
+    id: interventions
+    attributes:
+      label: Human oversight and interventions
+      description: Describe approvals and material human assistance, or state that the record does not establish them
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: The assessment will use templates/ASSESSMENT-TEMPLATE.md
+        - label: Failed, contradictory, and unknown evidence will be included
+        - label: No private information or unrelated personal detail is included
+        - label: The assessment will not be written as a permanent product claim
