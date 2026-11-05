@@ -207,3 +207,31 @@ Observation adequate to establish that an intended state, output, or delivery ac
 ## Worker
 
 An agent, process, device, or human assigned a bounded component of work by an orchestrator or coordinating procedure.
+
+## Canary statement
+
+A fabricated statement disclosed to exactly one witness through one channel under the sealed procedure in `docs/PROTOCOLS.md` (G4), used to detect whether a record path outside that channel carries statements. See CLM-016.
+
+## Clean rate
+
+The proportion of attempts confirmed with no duplicate effect, collateral effect, or intervention rescue, over all attempts including unknowns. See `docs/METRICS.md` section 2.
+
+## Confirmation rate
+
+Confirmed outcomes over confirmed, failed, and unknown outcomes combined. Unknowns remain in the denominator. See `docs/METRICS.md` section 2.
+
+## Escalation quality
+
+The measurable quality of an escalation independent of its rate: timing relative to irreversible steps, completeness of the decision context supplied, and routing to a principal entitled to decide. See CLM-015.
+
+## Failure code
+
+A short code (F-SRC to F-LEAK, defined in `docs/SCORECARDS.md`) attached to every failed gate so failures can be counted and compared across assessments.
+
+## Near miss
+
+A run with an acceptable final outcome whose path contained an event that would fail or harm under slightly different conditions, coded NM-1 to NM-4 in `docs/METRICS.md` section 5.
+
+## Operation class
+
+A category of fleet work distinguished by reversibility and consequence (for example, read only coordination versus irreversible actuation), used when verdicts are issued per class rather than per fleet. See CLM-020.

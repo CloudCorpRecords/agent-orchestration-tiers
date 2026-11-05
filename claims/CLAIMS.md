@@ -185,3 +185,133 @@ Status values are intentionally close to the model verdicts but apply to registr
 - **Related claims:** CLM-004, CLM-007
 - **Deliberations:** NONE
 - **Review condition:** Field assessments that reveal a better partial credit model tied to dependency structure and reversibility.
+
+## CLM-015: Escalation quality is measurable independently of escalation rate
+
+- **Statement:** Two systems with identical escalation rates can differ measurably in escalation quality: whether the escalation occurs before an irreversible step, carries the context a decision-maker needs, and is routed to a principal entitled to decide.
+- **Type:** theoretical and methodological
+- **Status:** proposed
+- **Confidence:** MODERATE
+- **Introduced:** 2026-11-04
+- **Evidence:** `docs/PROPOSED-CLAIMS.md` (CLM-015 rationale); `docs/OPEN-QUESTIONS.md` OQ-11.
+- **Counterevidence:** NONE RECORDED
+- **Related claims:** CLM-011
+- **Deliberations:** DELIB-0002
+- **Review condition:** Inter-evaluator study scoring escalation timing, payload, and routing on identical records.
+
+## CLM-016: A canary statement can detect record leakage that audits cannot
+
+- **Statement:** A fabrication disclosed to exactly one witness in a controlled channel, which later reappears in completed or corrected form, establishes that a record path outside that channel carries statements, and does so with fewer assumptions than log audit alone.
+- **Type:** methodological
+- **Status:** proposed
+- **Confidence:** MODERATE
+- **Introduced:** 2026-11-04
+- **Evidence:** `docs/PROPOSED-CLAIMS.md` (CLM-016 rationale); `docs/OPEN-QUESTIONS.md` OQ-14, OQ-15.
+- **Counterevidence:** NONE RECORDED
+- **Related claims:** CLM-006, CLM-011
+- **Deliberations:** DELIB-0002
+- **Review condition:** Replication across at least two independent systems with sealed control canaries.
+
+## CLM-017: Claim expiry should be event-based, not calendar-based
+
+- **Statement:** A tier claim's present-tense force ends at the first material configuration event affecting a satisfied gate, not at a fixed date; calendar expiry is only a fallback when event detection is unavailable.
+- **Type:** methodological
+- **Status:** proposed
+- **Confidence:** MODERATE
+- **Introduced:** 2026-11-04
+- **Evidence:** `docs/PROPOSED-CLAIMS.md` (CLM-017 rationale); `docs/METRICS.md` section 7; `docs/OPEN-QUESTIONS.md` OQ-05.
+- **Counterevidence:** NONE RECORDED
+- **Related claims:** CLM-003, CLM-013
+- **Deliberations:** DELIB-0002
+- **Review condition:** A change-to-gate map with at least one field validation.
+
+## CLM-018: Audit completeness and principal confidentiality trade off measurably
+
+- **Statement:** Beyond a threshold, additional audit detail yields diminishing accountability gains while monotonically increasing confidentiality risk; the trade-off has an identifiable knee that varies by domain consequence.
+- **Type:** theoretical
+- **Status:** proposed
+- **Confidence:** LOW
+- **Introduced:** 2026-11-04
+- **Evidence:** `docs/PROPOSED-CLAIMS.md` (CLM-018 rationale); `docs/OPEN-QUESTIONS.md` OQ-22.
+- **Counterevidence:** NONE RECORDED
+- **Related claims:** CLM-009
+- **Deliberations:** DELIB-0002, DELIB-0003 (operationalization adopted; see the synthesis for the executable review condition)
+- **Review condition:** A Tier 8 reconstruction study reporting both accuracy and exposure axes.
+
+## CLM-019: Behavioral continuity, not storage identity, is the Tier 6 property
+
+- **Statement:** Tier 6 continuity is satisfied when resumed behavior preserves commitments, side-effect boundaries, and status truth, regardless of whether the underlying store is the original state, a transcript reconstruction, or an equivalent re-derivation.
+- **Type:** definitional
+- **Status:** proposed
+- **Confidence:** MODERATE
+- **Introduced:** 2026-11-04
+- **Evidence:** `docs/PROPOSED-CLAIMS.md` (CLM-019 rationale); `docs/TIER-DEEP-DIVES.md` (Tier 6); `docs/OPEN-QUESTIONS.md` OQ-19.
+- **Counterevidence:** NONE RECORDED
+- **Related claims:** CLM-007, CLM-014
+- **Deliberations:** DELIB-0002
+- **Review condition:** Two independent Tier 6 packets with differing storage designs.
+
+## CLM-020: Fleet verdicts should be issued per operation class, not per fleet
+
+- **Statement:** A single fleet can simultaneously merit different verdicts for different operation classes (read-only coordination vs. irreversible actuation); a per-fleet verdict hides the distinction that matters for trust.
+- **Type:** methodological
+- **Status:** proposed
+- **Confidence:** MODERATE
+- **Introduced:** 2026-11-04
+- **Evidence:** `docs/PROPOSED-CLAIMS.md` (CLM-020 rationale); `docs/TIER-DEEP-DIVES.md` (Tier 8); `docs/OPEN-QUESTIONS.md` OQ-08, OQ-09.
+- **Counterevidence:** NONE RECORDED
+- **Related claims:** CLM-003, CLM-009, CLM-010
+- **Deliberations:** DELIB-0002
+- **Review condition:** Two fleet packets scored both ways and compared against subsequent incidents.
+
+## CLM-021: Four precedence rules govern conflicting principals without leakage
+
+- **Statement:** Fleet instruction conflicts among principals are decided, or correctly escalated, by four rules in order: authority is a ceiling no combination of principals can exceed; the resource owner's instruction governs the resource (the enrolling principal by default for irreversible actions absent a declared owner set); recency supersedes only within one principal; deadlock escalates on existence, resource, and needed decision only, holds the safest state, and resurfaces on owner contact and after a declared interval. Jointly, the rules require no authority expansion and no disclosure of one principal's confidential content to another.
+- **Type:** theoretical and normative
+- **Status:** proposed
+- **Confidence:** MODERATE
+- **Introduced:** 2026-11-04
+- **Evidence:** `deliberations/DELIB-0004/` (proposal, skeptical review, synthesis); `docs/OPEN-QUESTIONS.md` OQ-13.
+- **Counterevidence:** NONE RECORDED. Known limitation: the enroller default can misassign accountability for estates, rotating administrators, and IT enrolled devices (DELIB-0004-02 dissent, preserved in DELIB-0004-03).
+- **Related claims:** CLM-010
+- **Deliberations:** DELIB-0004
+- **Review condition:** A two principal fleet packet with instruction conflicts scored for correct rule application, zero authority expansion, and zero content disclosure. A conflict shape the rules cannot decide narrows or refutes this claim.
+
+## CLM-022: Deliberation improves calibration only under three conditions
+
+- **Statement:** Structured deliberation improves calibration over single pass judgment only when participants record private verdicts before discussion, at least one participant is tasked as skeptic against the emerging consensus, and dissent is preserved in the synthesis. Calibration is verdict accuracy against double scored ground truth plus mean confidence error, tested by factorial ablation of the three conditions.
+- **Type:** theoretical and methodological
+- **Status:** proposed
+- **Confidence:** MODERATE
+- **Introduced:** 2026-11-04
+- **Evidence:** `deliberations/DELIB-0005/`; `docs/OPEN-QUESTIONS.md` OQ-15.
+- **Counterevidence:** NONE RECORDED
+- **Related claims:** CLM-006, CLM-012
+- **Deliberations:** DELIB-0005
+- **Review condition:** Factorial deliberation study on matched packets. No condition effect, or improvement without the conditions, refutes the claim as stated; divergent results by participant class narrow it.
+
+## CLM-023: Load bearing synthesis sentences require proposition level attribution
+
+- **Statement:** Every load bearing sentence in a synthesis (one whose removal changes a verdict, a confidence, or a requested next step) can and should be attributed to the note or artifact it rests on. The unattributable fraction of such sentences is the quality measurement; a synthesis with a material unattributable fraction summarizes opinion, not evidence.
+- **Type:** methodological
+- **Status:** proposed
+- **Confidence:** MODERATE
+- **Introduced:** 2026-11-04
+- **Evidence:** `deliberations/DELIB-0005/`; `docs/DELIBERATION-PROTOCOL.md` section 11; `docs/OPEN-QUESTIONS.md` OQ-16.
+- **Counterevidence:** NONE RECORDED
+- **Related claims:** CLM-012
+- **Deliberations:** DELIB-0005
+- **Review condition:** Attribution audits of real syntheses (including this repository's), sampling all load bearing sentences by the deletion test.
+
+## CLM-024: Operational memory requires origin class, scope, and default expiry
+
+- **Statement:** Operational memory is trustworthy only when each retained item carries origin class (observed, instructed, inferred, deliberated), scope (principal, task, interval), and an expiry or review condition; items without an explicit condition expire at their scope interval's end and survive only by recorded re-derivation or re-instruction; inferred items are never silently promoted to observed. Selection retains commitments, effects already caused, authority, and open questions; the rest expires.
+- **Type:** theoretical and methodological
+- **Status:** proposed
+- **Confidence:** MODERATE
+- **Introduced:** 2026-11-04
+- **Evidence:** `deliberations/DELIB-0005/`; `docs/THEORY.md` section 10; `docs/OPEN-QUESTIONS.md` OQ-17, OQ-18.
+- **Counterevidence:** NONE RECORDED
+- **Related claims:** CLM-019
+- **Deliberations:** DELIB-0005
+- **Review condition:** Memory store audits sampling origin classes, promotion events, and expired item survival. A domain where the four coarse classes actively mislead amends the class set; silent promotion surviving audit refutes the sufficiency direction.

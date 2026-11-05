@@ -69,7 +69,7 @@ Verdicts change only for stated reasons: new evidence, demonstrated measurement 
 
 The complete map is in [docs/REPO-MAP.md](docs/REPO-MAP.md). In brief:
 
-- `docs/` contains theory, model, evidence, deliberation, contributor guidance, open questions, and glossary.
+- `docs/` contains theory, model, evidence, deliberation, contributor guidance, open questions, and glossary. Assessment practice companions added in the expansion: [docs/PROTOCOLS.md](docs/PROTOCOLS.md) (executable per tier protocols and global procedures), [docs/SCORECARDS.md](docs/SCORECARDS.md) (gate checklists and failure codes), [docs/METRICS.md](docs/METRICS.md) (denominators, reliability statistics, stopping rules), [docs/TIER-DEEP-DIVES.md](docs/TIER-DEEP-DIVES.md) (extended per tier treatment), [docs/PROPOSED-CLAIMS.md](docs/PROPOSED-CLAIMS.md) (drafts behind registered claims CLM-015 to CLM-020), and [docs/EXAMPLE-ASSESSMENT.md](docs/EXAMPLE-ASSESSMENT.md) (a fictional worked assessment showing gate level derivation). Start assessments from [docs/FIELD-GUIDE.md](docs/FIELD-GUIDE.md); see also [docs/EXAMPLE-FLEET.md](docs/EXAMPLE-FLEET.md) (fictional Tier 8 operation with per class verdicts), `templates/EVIDENCE-PACKET-TEMPLATE.md`, and [docs/AMENDMENT-LOG.md](docs/AMENDMENT-LOG.md) (the deliberative record of every expansion change to preexisting files).
 - `tiers/` contains one extensive treatment of each tier.
 - `templates/` contains reusable forms for notes, reviews, debates, assessments, and claims.
 - `claims/` contains the human readable and machine readable claim registry.

@@ -30,6 +30,20 @@ One substantive file per tier. Each defines the tier, its prerequisites, mandato
 
 The rules for what may support a claim. It defines evidence packets, direct observation, destination read backs, repetition, negative evidence, unknown outcomes, and the limits of self report.
 
+### Assessment practice companions
+
+The following companions expand the formal layer into executable practice. They do not override the tier files or the model. Where a companion appears to conflict with a tier file, the tier file governs and the conflict is deliberation material.
+
+- `docs/PROTOCOLS.md` turns each tier rubric into a concrete protocol (setup, trials, variations, failure injection, scoring, minimum packet) and adds global procedures: preregistration, environment declaration, run indexing, the sealed canary procedure (CLM-016), the audit reconstruction procedure (Tier 8), the human takeover event, and default verdict thresholds.
+- `docs/SCORECARDS.md` provides copy ready gate checklists per tier with required evidence classes, plus failure codes (F-SRC to F-LEAK) so failures can be counted across assessments.
+- `docs/METRICS.md` fixes the quantitative conventions: denominator taxonomy (action, step, task, run, day), confirmation and clean rates, Wilson intervals, consequence scaled stopping rules, the near miss taxonomy (NM-1 to NM-4), evaluator agreement (kappa), and event based expiry with sampling audits.
+- `docs/TIER-DEEP-DIVES.md` gives each tier an extended treatment: why it exists, its load bearing gate, passing and failing micro examples, domain variants, and what the next tier demands.
+- `docs/PROPOSED-CLAIMS.md` holds the drafting record behind registered claims CLM-015 to CLM-020, including the qualifications adopted in DELIB-0002 (CLM-018 operationalization requirement, CLM-016 handling procedure).
+- `docs/EXAMPLE-ASSESSMENT.md` is a fictional end to end assessment demonstrating scorecard derivation, run indexing, failure codes, and expiry on configuration change.
+- `docs/EXAMPLE-FLEET.md` is a fictional Tier 8 operation set demonstrating contention, withdrawal, authority boundary, human takeover, audit reconstruction, and per operation class verdicts (CLM-020).
+- `docs/FIELD-GUIDE.md` sequences the commons for a working evaluator in one page. `templates/EVIDENCE-PACKET-TEMPLATE.md` is the assemble ready packet form behind it.
+- `docs/AMENDMENT-LOG.md` records, per MODEL section 12, every expansion change to a preexisting file with its authorizing deliberation and its effect on prior claims.
+
 ## Deliberative layer
 
 ### `docs/DELIBERATION-PROTOCOL.md`

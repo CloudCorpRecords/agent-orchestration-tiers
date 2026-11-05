@@ -119,3 +119,36 @@ Tier 6 treats interruptibility as a virtue, but frequent steering can fragment w
 ### OQ-26. Can an agent know that it does not know?
 
 Many tier failures involve an agent treating an unread source as empty or an unknown outcome as settled. Better uncertainty behavior may be trainable, procedural, or architectural. The open question is how to distinguish genuine calibrated uncertainty from formulaic hedging.
+
+## Advancement pointers (expansion)
+
+The questions above remain open. The following pointers record where the expansion material (PROTOCOLS, SCORECARDS, METRICS, TIER-DEEP-DIVES, PROPOSED-CLAIMS, EXAMPLE-ASSESSMENT, DELIB-0002) gives each question a working instrument or a registered claim, so future contributors start from the instrument rather than from the question alone. A pointer does not answer its question.
+
+| Question | Instrument or claim that advances it |
+| --- | --- |
+| OQ-01 (denominator) | `docs/METRICS.md` section 1 (five denominators, dual reporting rule) |
+| OQ-02 (repetitions) | `docs/METRICS.md` section 3 (consequence scaled minimums and escalation rule); PROTOCOLS preregistration (G1) |
+| OQ-03 (lab to field) | PROTOCOLS G8 field validation stages (shadow, canary, field) with matched denominator gap reporting; supported by environment declaration (G2) and sampling audits (METRICS section 7) |
+| OQ-04 (near misses) | `docs/METRICS.md` section 5 (NM-1 to NM-4 taxonomy and scoring rule) |
+| OQ-05 (claim expiry) | CLM-017 (event based expiry); `docs/METRICS.md` section 7 watchlists |
+| OQ-06 (determinism) | `docs/METRICS.md` section 6 (double scoring, kappa, disagreement ledger) |
+| OQ-07 (cross product comparison) | PROTOCOLS G8 matched stage and matched environment rule (cross stage comparison named as a category error). Empirical comparability limits remain open |
+| OQ-08 (linearity) | CLM-020 (per operation class verdicts); TIER-DEEP-DIVES Tier 8 partial participation |
+| OQ-09 (profile vs score) | SCORECARDS gate blocks plus failure codes as the companion representation |
+| OQ-10 (autonomy by scope) | Model claim syntax (scope, duration, reversibility, escalation) applied per action class in PROTOCOLS Tier 8 |
+| OQ-11 (escalation quality) | CLM-015 (timing, payload, routing as separately scoreable dimensions) |
+| OQ-12 (authority through delegation) | PROTOCOLS Tier 8 authority boundary test; fault FT-05 (authority echo) in the G8 catalog; CLM-010 remains the governing claim |
+| OQ-13 (conflicting principals) | CLM-021 and DELIB-0004 (precedence rules P1 to P4 with enroller default and resurfacing). Field test defined; substantively open until a two principal packet exists |
+| OQ-14 (independent agreement) | CLM-016 canary procedure (PROTOCOLS G4) as a detection instrument; CLM-006 governs interpretation |
+| OQ-15 (deliberation harm) | CLM-022 (three conditions, factorial ablation) and DELIB-0005. Instrumented; no experimental result yet |
+| OQ-16 (synthesis ownership) | CLM-023 (deletion test, proposition level attribution). Instrumented; audit of real syntheses outstanding |
+| OQ-17 (what to remember) | CLM-024 selection rule (commitments, caused effects, authority, open questions retained; rest expires). Instrumented |
+| OQ-18 (memory provenance) | CLM-024 origin classes with default expiry and the promotion ban; canary sealing (PROTOCOLS G4) as the anchoring technique. Instrumented |
+| OQ-19 (continuity) | CLM-019 (behavioral continuity); TIER-DEEP-DIVES Tier 6 |
+| OQ-20 (partial credit) | CLM-014 plus METRICS dual denominators (task outcome beside action effects) |
+| OQ-21 (resource claims) | PROTOCOLS Tier 8 claim fields plus human takeover event (G6); owner class and preemption refined in DELIB-0004 |
+| OQ-22 (audit vs surveillance) | CLM-018 as operationalized in DELIB-0003 (scored exposure axis); reconstruction exposure note (G5) |
+| OQ-23 (rare catastrophes) | PROTOCOLS G8 injected fault catalog FT-01 to FT-07 with pass conditions; natural frequency treatment remains open by design |
+| OQ-24 (process theater) | TIER-DEEP-DIVES Tier 6 (status from artifacts); SCORECARDS status gate requires artifact pointers |
+| OQ-25 (cost of interruption) | TIER-DEEP-DIVES Tier 6 steering semantics (received, queued, applied, rejected); cost quantification open |
+| OQ-26 (knowing ignorance) | METRICS section 8 (unknown precision, unknown recall, premature closure rate). Instrumented; per tier profiles outstanding |
